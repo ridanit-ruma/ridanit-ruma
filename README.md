@@ -12,6 +12,19 @@ lives in NixOS flakes and GitOps repositories.
 ## Stack
 
 <p>
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C#" />
+  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
+</p>
+<p>
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/Flux%20CD-5468FF?style=for-the-badge&logo=flux&logoColor=white" alt="Flux CD" />
   <img src="https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white" alt="NixOS" />
@@ -20,15 +33,20 @@ lives in NixOS flakes and GitOps repositories.
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
 
-<P>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-</P>
-
 ## Projects
 
-- [schematic-planner](https://github.com/ridanit-ruma/schematic-planner) — what I am working on most right now
-- [kubitor](https://github.com/ridanit-ruma/kubitor) — Kubernetes cluster tooling
-- [kuber-fluxcd](https://github.com/ridanit-ruma/kuber-fluxcd) — GitOps manifests driven by Flux CD
-- [kuber-nixos-flakes](https://github.com/ridanit-ruma/kuber-nixos-flakes) — NixOS flakes for the cluster nodes
+**[schematic-planner](https://github.com/ridanit-ruma/schematic-planner)** — Plan software as a
+graph of features, tasks and decisions on a canvas, then take it away as a Markdown tree and an
+Obsidian Canvas. People and AI agents are peer clients of the same document, the agents over MCP.
+
+**[kubitor](https://github.com/ridanit-ruma/kubitor)** — A Kubernetes dashboard that is already
+full the first time you open it. It reads the cluster you have, works out what is installed, and
+shows the screens that match — no Prometheus stack to assemble first.
+
+**[kuber-fluxcd](https://github.com/ridanit-ruma/kuber-fluxcd)** — Everything a bare `kubeadm`
+cluster is missing — Cilium, Traefik, cert-manager, Rook — reconciled from git by Flux, in the
+order it has to arrive.
+
+**[kuber-nixos-flakes](https://github.com/ridanit-ruma/kuber-nixos-flakes)** — The machines under
+that cluster: four NixOS nodes described in one file, with an installer that takes a fresh box to
+a joined node.
